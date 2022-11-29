@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-public class SceneUtils
+public static class SceneUtils
 {
     public static void LoadScene(string sceneName, LoadSceneMode mode, Dictionary<string, string> data)
     {
@@ -17,7 +17,7 @@ public class SceneUtils
     
     public static Dictionary<string, string> SceneData = new Dictionary<string, string>();
 
-    public void Clear()
+    public static void Clear()
     {
         SceneData.Clear();
     }
